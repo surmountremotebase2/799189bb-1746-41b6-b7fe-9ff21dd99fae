@@ -1,1 +1,1 @@
-{}
+{"interval": "1hour", "assets": ["VOO"], "strategy": [{"type": "IF", "conditions": [{"type": "BINARY", "first": {"name": "MOMENTUM", "args": {"length": "1", "ticker": "VOO"}, "advanced": {}}, "second": {"name": "constant", "args": {"value": "5"}}, "comp": ">", "operator": ""}], "if_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "VOO", "amount": "110"}]}, "else_action": {"type": "ACTION", "steps": [{"action": "allocation", "asset": "VOO", "amount": "90"}]}}]}
